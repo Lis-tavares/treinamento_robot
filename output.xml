@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.5 on darwin)" generated="2025-01-14T21:41:08.934645" rpa="false" schemaversion="5">
+<suite id="s1" name="Orange Tests" source="/Users/lislaine/Documents/treinamento/RobotFramework/treinamento_robot/orange_tests.robot">
+<kw name="Logar no Sistema" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:09.166166" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-14T21:41:09.165803" elapsed="4.359055"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-14T21:41:13.525709" elapsed="0.572492"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:41:19.099723" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:41:14.098793" elapsed="5.001306"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:19.101003" level="INFO">Typing text 'Admin' into text field '//input[@name='username']'.</msg>
+<arg>//input[@name='username']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:19.100338" elapsed="0.194436"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:19.295358" level="INFO">Typing text 'admin123' into text field '//input[@name='password']'.</msg>
+<arg>//input[@name='password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:19.295033" elapsed="0.127676"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:19.424006" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:19.423245" elapsed="0.970857"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:41:30.394749" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:41:20.394391" elapsed="10.000624"/>
+</kw>
+<status status="PASS" start="2025-01-14T21:41:09.165104" elapsed="21.230132"/>
+</kw>
+<test id="s1-t1" name="Validar Menu vertical" line="30">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:30.396583" level="INFO">Clicking link '//a[@href="/web/index.php/admin/viewAdminModule"]'.</msg>
+<arg>//a[@href="/web/index.php/admin/viewAdminModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:30.396259" elapsed="0.734795"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:41:36.132335" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:41:31.131799" elapsed="5.000778"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="Admin"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:41:36.133048" elapsed="0.023801"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:36.157628" level="INFO">Clicking link '//a[@href="/web/index.php/pim/viewPimModule"]'.</msg>
+<arg>//a[@href="/web/index.php/pim/viewPimModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:36.157296" elapsed="0.670339"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:41:41.828700" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:41:36.828213" elapsed="5.000894"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="PIM"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:41:41.829810" elapsed="0.021990"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:41.852650" level="INFO">Clicking link '//a[@href="/web/index.php/leave/viewLeaveModule"]'.</msg>
+<arg>//a[@href="/web/index.php/leave/viewLeaveModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:41.852300" elapsed="0.721517"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:41:47.574712" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:41:42.574365" elapsed="5.000621"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="Leave"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:41:47.575539" elapsed="0.022909"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:47.599483" level="INFO">Clicking link '//a[@href="/web/index.php/recruitment/viewRecruitmentModule"]'.</msg>
+<arg>//a[@href="/web/index.php/recruitment/viewRecruitmentModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:47.599064" elapsed="0.749674"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:41:53.349756" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:41:48.349341" elapsed="5.000693"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="Recruitment"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:41:53.350747" elapsed="0.052850"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:53.404549" level="INFO">Clicking link '//a[@href="/web/index.php/pim/viewMyDetails"]'.</msg>
+<arg>//a[@href="/web/index.php/pim/viewMyDetails"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:53.404147" elapsed="0.652103"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:41:59.058061" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:41:54.056980" elapsed="5.001369"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="PIM"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:41:59.058864" elapsed="0.016909"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:41:59.076650" level="INFO">Clicking link '//a[@href="/web/index.php/performance/viewPerformanceModule"]'.</msg>
+<arg>//a[@href="/web/index.php/performance/viewPerformanceModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:41:59.076336" elapsed="0.597870"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:42:04.675259" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:41:59.674823" elapsed="5.000694"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="Performance"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:42:04.676085" elapsed="0.020177"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:42:04.697106" level="INFO">Clicking link '//a[@href="/web/index.php/dashboard/index"]'.</msg>
+<arg>//a[@href="/web/index.php/dashboard/index"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:42:04.696747" elapsed="0.381409"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:42:10.079542" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:42:05.078665" elapsed="5.001135"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="Dashboard"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:42:10.080398" elapsed="0.019590"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:42:10.100822" level="INFO">Clicking link '//a[@href="/web/index.php/directory/viewDirectory"]'.</msg>
+<arg>//a[@href="/web/index.php/directory/viewDirectory"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:42:10.100438" elapsed="0.418776"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:42:15.520321" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:42:10.519859" elapsed="5.000738"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="Directory"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:42:15.521181" elapsed="0.019600"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:42:15.541665" level="INFO">Clicking link '//a[@href="/web/index.php/claim/viewClaimModule"]'.</msg>
+<arg>//a[@href="/web/index.php/claim/viewClaimModule"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:42:15.541280" elapsed="0.608403"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:42:21.150739" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:42:16.150367" elapsed="5.000623"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="Claim"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:42:21.151590" elapsed="0.018963"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:42:21.171305" level="INFO">Clicking link '//a[@href="/web/index.php/buzz/viewBuzz"]'.</msg>
+<arg>//a[@href="/web/index.php/buzz/viewBuzz"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:42:21.171003" elapsed="0.371737"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:42:26.543879" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:42:21.543397" elapsed="5.000928"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[text()="Buzz"]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T21:42:26.544919" elapsed="0.025218"/>
+</kw>
+<status status="PASS" start="2025-01-14T21:41:30.395460" elapsed="56.175216"/>
+</test>
+<kw name="Fechar Sistema" type="TEARDOWN">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:42:26.598034" level="INFO">Clicking element '//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']'.</msg>
+<arg>//img[@src='/web/index.php/pim/viewPhoto/empNumber/7']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:42:26.597449" elapsed="0.075794"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-14T21:42:29.673905" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-14T21:42:26.673515" elapsed="3.000686"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-14T21:42:29.674774" level="INFO">Clicking link '//a[@href="/web/index.php/auth/logout"]'.</msg>
+<arg>//a[@href="/web/index.php/auth/logout"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T21:42:29.674469" elapsed="0.893174"/>
+</kw>
+<status status="PASS" start="2025-01-14T21:42:26.572608" elapsed="3.995427"/>
+</kw>
+<status status="PASS" start="2025-01-14T21:41:08.939825" elapsed="81.628454"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Orange Tests">Orange Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
